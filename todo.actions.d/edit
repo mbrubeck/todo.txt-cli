@@ -9,6 +9,6 @@ case $1 in
   ;;
 *)
   FILE=${2:-todo}.txt
-  $EDITOR $TODO_DIR/$FILE
+  $EDITOR "$TODO_DIR/$FILE"
   ;;
 esac
