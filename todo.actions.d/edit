@@ -8,7 +8,7 @@ case $1 in
 *)
   FILE=${2:-todo}.txt
   if [ -n "$EDITOR" ]; then
-    $EDITOR $TODO_DIR/$FILE
+    $EDITOR "$TODO_DIR/$FILE"
   else
     echo "Error: The EDITOR environment variable is not set"
   fi
